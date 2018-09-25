@@ -264,6 +264,15 @@ class HardSourceWebpackPlugin {
       'relativeHelpers',
     ]);
 
+    if (configHashInDirectory) {
+      const PruneCachesSystem = require('./lib/SystemPruneCaches');
+
+      new PruneCachesSystem(
+        path.dirname(cacheDirPath),
+        options.cachePrune,
+      ).apply(compiler);
+    }
+
     function runReadOrReset(_compiler) {
       logger.unlock();
 
@@ -390,15 +399,6 @@ class HardSourceWebpackPlugin {
             // console.log('cache in', Date.now() - start);
           });
       });
-    }
-
-    function runVerify(_compiler) {
-      if (!active) {
-        return Promise.resolve();
-      }
-
-      const stats = {};
-      return pluginCompat.promise(compiler, '_hardSourceVerifyCache', []);
     }
 
     compilerHooks.watchRun.tapPromise(
@@ -529,6 +529,15 @@ class HardSourceWebpackPlugin {
 
     new ChalkLoggerPlugin(this.options.info).apply(compiler);
 
+    function runVerify(_compiler) {
+      if (!active) {
+        return Promise.resolve();
+      }
+
+      const stats = {};
+      return pluginCompat.promise(compiler, '_hardSourceVerifyCache', []);
+    }
+
     compilerHooks.watchRun.tapPromise('HardSource - index - verify', runVerify);
     compilerHooks.run.tapPromise('HardSource - index - verify', runVerify);
 
@@ -591,3 +600,9 @@ HardSourceWebpackPlugin.SerializerAppend2Plugin = SerializerAppend2Plugin;
 HardSourceWebpackPlugin.SerializerAppendPlugin = SerializerAppendPlugin;
 HardSourceWebpackPlugin.SerializerCacachePlugin = SerializerCacachePlugin;
 HardSourceWebpackPlugin.SerializerJsonPlugin = SerializerJsonPlugin;
+
+Object.defineProperty(HardSourceWebpackPlugin, 'ParallelModulePlugin', {
+  get() {
+    return require('./lib/ParallelModulePlugin');
+  },
+});

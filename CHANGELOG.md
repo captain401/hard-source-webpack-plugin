@@ -2,6 +2,109 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.12.0"></a>
+# [0.12.0](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.11.2...v0.12.0) (2018-07-30)
+
+
+### Bug Fixes
+
+* memory leak in TransformNormalModuleFactoryPlugin ([#414](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/414)) ([33b306b](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/33b306b))
+
+
+### Features
+
+* add ParallelModulePlugin ([#415](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/415)) ([9585d47](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/9585d47))
+
+
+
+<a name="0.11.2"></a>
+## [0.11.2](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.11.0...v0.11.2) (2018-07-22)
+
+
+### Bug Fixes
+
+* performance regression due to false position md5 ([#413](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/413)) ([c670f73](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/c670f73))
+* serialize path query params without change ([#408](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/408)) ([734e5b0](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/734e5b0))
+* webpack 3 RuleSet creation ([#407](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/407)) ([6551c8e](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/6551c8e))
+
+
+
+<a name="0.11.1"></a>
+## [0.11.1](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.10.1...v0.11.1) (2018-07-12)
+
+
+### Bug Fixes
+
+* plus sign missing ([#398](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/398)) ([8885f10](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/8885f10))
+* serialize path query params without change ([#408](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/408)) ([734e5b0](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/734e5b0))
+* use Buffer.alloc ([#402](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/402)) ([e327108](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/e327108))
+* webpack 3 RuleSet creation ([#407](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/407)) ([6551c8e](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/6551c8e))
+
+
+### Features
+
+* support resource data sideEffects: false ([#403](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/403)) ([a5c5d33](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/a5c5d33))
+
+
+
+<a name="0.11.0"></a>
+# [0.11.0](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.10.2...v0.11.0) (2018-07-07)
+
+
+### Features
+
+* support resource data sideEffects: false ([#403](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/403)) ([a5c5d33](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/a5c5d33))
+
+
+
+<a name="0.10.2"></a>
+## [0.10.2](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.10.0...v0.10.2) (2018-07-07)
+
+
+### Bug Fixes
+
+* plus sign missing ([#398](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/398)) ([8885f10](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/8885f10))
+* support unresolved loader resolve calls ([#396](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/396)) ([66086aa](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/66086aa))
+* use Buffer.alloc ([#402](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/402)) ([e327108](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/e327108))
+
+
+
+<a name="0.10.1"></a>
+## [0.10.1](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.10.0...v0.10.1) (2018-07-02)
+
+
+### Bug Fixes
+
+* support unresolved loader resolve calls ([#396](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/396)) ([66086aa](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/66086aa))
+
+
+
+<a name="0.10.0"></a>
+# [0.10.0](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.9.0...v0.10.0) (2018-07-02)
+
+
+### Features
+
+* store low level resolutions from built module ([#392](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/392)) ([2d0df51](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/2d0df51))
+
+
+
+<a name="0.9.0"></a>
+# [0.9.0](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.8.1...v0.9.0) (2018-06-23)
+
+
+### Bug Fixes
+
+* **package:** update find-cache-dir to version 2.0.0 ([#385](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/385)) ([d871c8a](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/d871c8a))
+* **package:** update pkg-dir to version 3.0.0 ([#384](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/384)) ([d97566d](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/d97566d))
+
+
+### Features
+
+* add cache pruning ([#386](https://github.com/mzgoddard/hard-source-webpack-plugin/issues/386)) ([c685a61](https://github.com/mzgoddard/hard-source-webpack-plugin/commit/c685a61))
+
+
+
 <a name="0.8.1"></a>
 ## [0.8.1](https://github.com/mzgoddard/hard-source-webpack-plugin/compare/v0.8.0...v0.8.1) (2018-06-14)
 
