@@ -1,3 +1,5 @@
+'use strict';
+
 var DllReferencePlugin = require('webpack').DllReferencePlugin;
 var HardSourceWebpackPlugin = require('../../..');
 
@@ -7,20 +9,18 @@ module.exports = {
   output: {
     path: __dirname + '/tmp',
     filename: 'main.js',
-    library: '[name]_[hash]',
+    library: '[name]_[hash]'
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-      environmentHash: {
-        root: __dirname + '/../../..',
-      },
-    }),
-    new DllReferencePlugin({
-      scope: '.',
-      extensions: ['', '.js'],
-      manifest: require('./dll-manifest.json'),
-      // manifest: __dirname + '/dll-manifest.json',
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache',
+    environmentHash: {
+      root: __dirname + '/../../..'
+    }
+  }), new DllReferencePlugin({
+    scope: '.',
+    extensions: ['', '.js'],
+    manifest: require('./dll-manifest.json')
+    // manifest: __dirname + '/dll-manifest.json',
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1kbGwtcmVmZXJlbmNlLXNjb3BlL3dlYnBhY2suY29uZmlnLmpzIl0sIm5hbWVzIjpbIkRsbFJlZmVyZW5jZVBsdWdpbiIsInJlcXVpcmUiLCJIYXJkU291cmNlV2VicGFja1BsdWdpbiIsIm1vZHVsZSIsImV4cG9ydHMiLCJjb250ZXh0IiwiX19kaXJuYW1lIiwiZW50cnkiLCJvdXRwdXQiLCJwYXRoIiwiZmlsZW5hbWUiLCJsaWJyYXJ5IiwicGx1Z2lucyIsImNhY2hlRGlyZWN0b3J5IiwiZW52aXJvbm1lbnRIYXNoIiwicm9vdCIsInNjb3BlIiwiZXh0ZW5zaW9ucyIsIm1hbmlmZXN0Il0sIm1hcHBpbmdzIjoiOztBQUFBLElBQUlBLHFCQUFxQkMsUUFBUSxTQUFSLEVBQW1CRCxrQkFBNUM7QUFDQSxJQUFJRSwwQkFBMEJELG1CQUE5Qjs7QUFFQUUsT0FBT0MsT0FBUCxHQUFpQjtBQUNmQyxXQUFTQyxTQURNO0FBRWZDLFNBQU8sWUFGUTtBQUdmQyxVQUFRO0FBQ05DLFVBQU1ILFlBQVksTUFEWjtBQUVOSSxjQUFVLFNBRko7QUFHTkMsYUFBUztBQUhILEdBSE87QUFRZkMsV0FBUyxDQUNQLElBQUlWLHVCQUFKLENBQTRCO0FBQzFCVyxvQkFBZ0IsT0FEVTtBQUUxQkMscUJBQWlCO0FBQ2ZDLFlBQU1ULFlBQVk7QUFESDtBQUZTLEdBQTVCLENBRE8sRUFPUCxJQUFJTixrQkFBSixDQUF1QjtBQUNyQmdCLFdBQU8sR0FEYztBQUVyQkMsZ0JBQVksQ0FBQyxFQUFELEVBQUssS0FBTCxDQUZTO0FBR3JCQyxjQUFVakI7QUFDVjtBQUpxQixHQUF2QixDQVBPO0FBUk0sQ0FBakIiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLWRsbC1yZWZlcmVuY2Utc2NvcGUvd2VicGFjay5jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgRGxsUmVmZXJlbmNlUGx1Z2luID0gcmVxdWlyZSgnd2VicGFjaycpLkRsbFJlZmVyZW5jZVBsdWdpbjtcbnZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiAnLi9pbmRleC5qcycsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICAgIGxpYnJhcnk6ICdbbmFtZV1fW2hhc2hdJyxcbiAgfSxcbiAgcGx1Z2luczogW1xuICAgIG5ldyBIYXJkU291cmNlV2VicGFja1BsdWdpbih7XG4gICAgICBjYWNoZURpcmVjdG9yeTogJ2NhY2hlJyxcbiAgICAgIGVudmlyb25tZW50SGFzaDoge1xuICAgICAgICByb290OiBfX2Rpcm5hbWUgKyAnLy4uLy4uLy4uJyxcbiAgICAgIH0sXG4gICAgfSksXG4gICAgbmV3IERsbFJlZmVyZW5jZVBsdWdpbih7XG4gICAgICBzY29wZTogJy4nLFxuICAgICAgZXh0ZW5zaW9uczogWycnLCAnLmpzJ10sXG4gICAgICBtYW5pZmVzdDogcmVxdWlyZSgnLi9kbGwtbWFuaWZlc3QuanNvbicpLFxuICAgICAgLy8gbWFuaWZlc3Q6IF9fZGlybmFtZSArICcvZGxsLW1hbmlmZXN0Lmpzb24nLFxuICAgIH0pLFxuICBdLFxufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

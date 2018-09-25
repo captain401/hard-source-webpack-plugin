@@ -1,3 +1,6 @@
-import {add, getNumber} from './wasm.wasm';
+'use strict';
 
-console.log(add(getNumber(), 2));
+var _wasm = require('./wasm.wasm');
+
+console.log((0, _wasm.add)((0, _wasm.getNumber)(), 2));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2Utd2FzbS9pbmRleC5qcyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUVBQSxRQUFRQyxHQUFSLENBQVksZUFBSSxzQkFBSixFQUFpQixDQUFqQixDQUFaIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2Utd2FzbS9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7YWRkLCBnZXROdW1iZXJ9IGZyb20gJy4vd2FzbS53YXNtJztcblxuY29uc29sZS5sb2coYWRkKGdldE51bWJlcigpLCAyKSk7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

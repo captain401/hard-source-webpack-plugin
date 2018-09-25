@@ -1,9 +1,12 @@
+'use strict';
+
 var fib = require('./fib');
 
 console.log(fib(3));
 
 if (module.hot) {
-  module.hot.accept('./fib', function() {
+  module.hot.accept('./fib', function () {
     console.log(require('./fib')(3));
   });
 }
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1obXItcHJvY2Vzcy1lbnYvaW5kZXguanMiXSwibmFtZXMiOlsiZmliIiwicmVxdWlyZSIsImNvbnNvbGUiLCJsb2ciLCJtb2R1bGUiLCJob3QiLCJhY2NlcHQiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSUEsTUFBTUMsZ0JBQVY7O0FBRUFDLFFBQVFDLEdBQVIsQ0FBWUgsSUFBSSxDQUFKLENBQVo7O0FBRUEsSUFBSUksT0FBT0MsR0FBWCxFQUFnQjtBQUNkRCxTQUFPQyxHQUFQLENBQVdDLE1BQVgsQ0FBa0IsT0FBbEIsRUFBMkIsWUFBVztBQUNwQ0osWUFBUUMsR0FBUixDQUFZRixpQkFBaUIsQ0FBakIsQ0FBWjtBQUNELEdBRkQ7QUFHRCIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9wbHVnaW4taG1yLXByb2Nlc3MtZW52L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIGZpYiA9IHJlcXVpcmUoJy4vZmliJyk7XG5cbmNvbnNvbGUubG9nKGZpYigzKSk7XG5cbmlmIChtb2R1bGUuaG90KSB7XG4gIG1vZHVsZS5ob3QuYWNjZXB0KCcuL2ZpYicsIGZ1bmN0aW9uKCkge1xuICAgIGNvbnNvbGUubG9nKHJlcXVpcmUoJy4vZmliJykoMykpO1xuICB9KTtcbn1cbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

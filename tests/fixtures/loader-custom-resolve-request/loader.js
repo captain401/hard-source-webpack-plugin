@@ -1,7 +1,7 @@
-module.exports = function(source) {
+'use strict';
+
+module.exports = function (source) {
   this.cacheable && this.cacheable();
-  return new Promise(
-    (f, e) => this.resolve(this.context, './fab', (er, v) => er ? e(er) : f(v))
-  )
-  .then(v => JSON.stringify(v));
+  return new Promise((f, e) => this.resolve(this.context, './fab', (er, v) => er ? e(er) : f(v))).then(v => JSON.stringify(v));
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1yZXF1ZXN0L2xvYWRlci5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwic291cmNlIiwiY2FjaGVhYmxlIiwiUHJvbWlzZSIsImYiLCJlIiwicmVzb2x2ZSIsImNvbnRleHQiLCJlciIsInYiLCJ0aGVuIiwiSlNPTiIsInN0cmluZ2lmeSJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFpQixVQUFTQyxNQUFULEVBQWlCO0FBQ2hDLE9BQUtDLFNBQUwsSUFBa0IsS0FBS0EsU0FBTCxFQUFsQjtBQUNBLFNBQU8sSUFBSUMsT0FBSixDQUNMLENBQUNDLENBQUQsRUFBSUMsQ0FBSixLQUFVLEtBQUtDLE9BQUwsQ0FBYSxLQUFLQyxPQUFsQixFQUEyQixPQUEzQixFQUFvQyxDQUFDQyxFQUFELEVBQUtDLENBQUwsS0FBV0QsS0FBS0gsRUFBRUcsRUFBRixDQUFMLEdBQWFKLEVBQUVLLENBQUYsQ0FBNUQsQ0FETCxFQUdOQyxJQUhNLENBR0RELEtBQUtFLEtBQUtDLFNBQUwsQ0FBZUgsQ0FBZixDQUhKLENBQVA7QUFJRCxDQU5EIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1yZXF1ZXN0L2xvYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24oc291cmNlKSB7XG4gIHRoaXMuY2FjaGVhYmxlICYmIHRoaXMuY2FjaGVhYmxlKCk7XG4gIHJldHVybiBuZXcgUHJvbWlzZShcbiAgICAoZiwgZSkgPT4gdGhpcy5yZXNvbHZlKHRoaXMuY29udGV4dCwgJy4vZmFiJywgKGVyLCB2KSA9PiBlciA/IGUoZXIpIDogZih2KSlcbiAgKVxuICAudGhlbih2ID0+IEpTT04uc3RyaW5naWZ5KHYpKTtcbn07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

@@ -1,8 +1,6 @@
+'use strict';
+
 var context = require.context('a', true, /\d/);
 
-module.exports =
-  context('./1') +
-  context('./2') +
-  context('./3') +
-  context('./4') +
-  context('./5');
+module.exports = context('./1') + context('./2') + context('./3') + context('./4') + context('./5');
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY29udGV4dC1tb3ZlL2EuanMiXSwibmFtZXMiOlsiY29udGV4dCIsInJlcXVpcmUiLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQUlBLFVBQVVDLFFBQVFELE9BQVIsQ0FBZ0IsR0FBaEIsRUFBcUIsSUFBckIsRUFBMkIsSUFBM0IsQ0FBZDs7QUFFQUUsT0FBT0MsT0FBUCxHQUNFSCxRQUFRLEtBQVIsSUFDQUEsUUFBUSxLQUFSLENBREEsR0FFQUEsUUFBUSxLQUFSLENBRkEsR0FHQUEsUUFBUSxLQUFSLENBSEEsR0FJQUEsUUFBUSxLQUFSLENBTEYiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1jb250ZXh0LW1vdmUvYS5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBjb250ZXh0ID0gcmVxdWlyZS5jb250ZXh0KCdhJywgdHJ1ZSwgL1xcZC8pO1xuXG5tb2R1bGUuZXhwb3J0cyA9XG4gIGNvbnRleHQoJy4vMScpICtcbiAgY29udGV4dCgnLi8yJykgK1xuICBjb250ZXh0KCcuLzMnKSArXG4gIGNvbnRleHQoJy4vNCcpICtcbiAgY29udGV4dCgnLi81Jyk7Il0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

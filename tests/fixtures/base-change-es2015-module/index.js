@@ -1,2 +1,10 @@
-import {key} from './obj';
-export default key;
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _obj = require('./obj');
+
+exports.default = _obj.key;
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY2hhbmdlLWVzMjAxNS1tb2R1bGUvaW5kZXguanMiXSwibmFtZXMiOlsia2V5Il0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQTs7a0JBQ2VBLFEiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1jaGFuZ2UtZXMyMDE1LW1vZHVsZS9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7a2V5fSBmcm9tICcuL29iaic7XG5leHBvcnQgZGVmYXVsdCBrZXk7Il0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

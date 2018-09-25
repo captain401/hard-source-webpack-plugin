@@ -1,9 +1,12 @@
-define('./fib', function() {
-  return function(n) {
+'use strict';
+
+define('./fib', function () {
+  return function (n) {
     return n + (n > 0 ? n - 1 : 0);
   };
 });
 
-define(['./fib'], function(fib) {
+define(['./fib'], function (fib) {
   console.log(fib(3));
 });
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtYW1kLTFkZXAtbG9jYWwvaW5kZXguanMiXSwibmFtZXMiOlsiZGVmaW5lIiwibiIsImZpYiIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQUFBLE9BQU8sT0FBUCxFQUFnQixZQUFXO0FBQ3pCLFNBQU8sVUFBU0MsQ0FBVCxFQUFZO0FBQ2pCLFdBQU9BLEtBQUtBLElBQUksQ0FBSixHQUFRQSxJQUFJLENBQVosR0FBZ0IsQ0FBckIsQ0FBUDtBQUNELEdBRkQ7QUFHRCxDQUpEOztBQU1BRCxPQUFPLENBQUMsT0FBRCxDQUFQLEVBQWtCLFVBQVNFLEdBQVQsRUFBYztBQUM5QkMsVUFBUUMsR0FBUixDQUFZRixJQUFJLENBQUosQ0FBWjtBQUNELENBRkQiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1hbWQtMWRlcC1sb2NhbC9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImRlZmluZSgnLi9maWInLCBmdW5jdGlvbigpIHtcbiAgcmV0dXJuIGZ1bmN0aW9uKG4pIHtcbiAgICByZXR1cm4gbiArIChuID4gMCA/IG4gLSAxIDogMCk7XG4gIH07XG59KTtcblxuZGVmaW5lKFsnLi9maWInXSwgZnVuY3Rpb24oZmliKSB7XG4gIGNvbnNvbGUubG9nKGZpYigzKSk7XG59KTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

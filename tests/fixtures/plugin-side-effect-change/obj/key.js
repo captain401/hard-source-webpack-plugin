@@ -1,3 +1,9 @@
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 let key = 'key';
 
-export {key};
+exports.key = key;
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1zaWRlLWVmZmVjdC1jaGFuZ2Uvb2JqL2tleS5qcyJdLCJuYW1lcyI6WyJrZXkiXSwibWFwcGluZ3MiOiI7Ozs7O0FBQUEsSUFBSUEsTUFBTSxLQUFWOztRQUVRQSxHLEdBQUFBLEciLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLXNpZGUtZWZmZWN0LWNoYW5nZS9vYmova2V5LmpzIiwic291cmNlc0NvbnRlbnQiOlsibGV0IGtleSA9ICdrZXknO1xuXG5leHBvcnQge2tleX07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

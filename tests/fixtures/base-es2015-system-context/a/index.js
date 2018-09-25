@@ -1,5 +1,10 @@
-export default Promise.all([1, 2, 3, 4, 5].map(i => System.import('./' + i)))
-.then(values => {
-  const [m1, m2, m3, m4, m5] = values;
-  return (m1 + m2 + m3 + m4 + m5);
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
 });
+exports.default = Promise.all([1, 2, 3, 4, 5].map(i => System.import('./' + i))).then(values => {
+  const [m1, m2, m3, m4, m5] = values;
+  return m1 + m2 + m3 + m4 + m5;
+});
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LXN5c3RlbS1jb250ZXh0L2EvaW5kZXguanMiXSwibmFtZXMiOlsiUHJvbWlzZSIsImFsbCIsIm1hcCIsImkiLCJTeXN0ZW0iLCJpbXBvcnQiLCJ0aGVuIiwidmFsdWVzIiwibTEiLCJtMiIsIm0zIiwibTQiLCJtNSJdLCJtYXBwaW5ncyI6Ijs7Ozs7a0JBQWVBLFFBQVFDLEdBQVIsQ0FBWSxDQUFDLENBQUQsRUFBSSxDQUFKLEVBQU8sQ0FBUCxFQUFVLENBQVYsRUFBYSxDQUFiLEVBQWdCQyxHQUFoQixDQUFvQkMsS0FBS0MsT0FBT0MsTUFBUCxDQUFjLE9BQU9GLENBQXJCLENBQXpCLENBQVosRUFDZEcsSUFEYyxDQUNUQyxVQUFVO0FBQ2QsUUFBTSxDQUFDQyxFQUFELEVBQUtDLEVBQUwsRUFBU0MsRUFBVCxFQUFhQyxFQUFiLEVBQWlCQyxFQUFqQixJQUF1QkwsTUFBN0I7QUFDQSxTQUFRQyxLQUFLQyxFQUFMLEdBQVVDLEVBQVYsR0FBZUMsRUFBZixHQUFvQkMsRUFBNUI7QUFDRCxDQUpjLEMiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1lczIwMTUtc3lzdGVtLWNvbnRleHQvYS9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IFByb21pc2UuYWxsKFsxLCAyLCAzLCA0LCA1XS5tYXAoaSA9PiBTeXN0ZW0uaW1wb3J0KCcuLycgKyBpKSkpXG4udGhlbih2YWx1ZXMgPT4ge1xuICBjb25zdCBbbTEsIG0yLCBtMywgbTQsIG01XSA9IHZhbHVlcztcbiAgcmV0dXJuIChtMSArIG0yICsgbTMgKyBtNCArIG01KTtcbn0pO1xuIl0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

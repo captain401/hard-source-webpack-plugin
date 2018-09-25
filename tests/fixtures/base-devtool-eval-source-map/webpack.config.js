@@ -1,3 +1,5 @@
+'use strict';
+
 var HardSourceWebpackPlugin = require('../../..');
 
 module.exports = {
@@ -6,11 +8,10 @@ module.exports = {
   devtool: 'eval-source-map',
   output: {
     path: __dirname + '/tmp',
-    filename: 'main.js',
+    filename: 'main.js'
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache'
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZGV2dG9vbC1ldmFsLXNvdXJjZS1tYXAvd2VicGFjay5jb25maWcuanMiXSwibmFtZXMiOlsiSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4iLCJyZXF1aXJlIiwibW9kdWxlIiwiZXhwb3J0cyIsImNvbnRleHQiLCJfX2Rpcm5hbWUiLCJlbnRyeSIsImRldnRvb2wiLCJvdXRwdXQiLCJwYXRoIiwiZmlsZW5hbWUiLCJwbHVnaW5zIiwiY2FjaGVEaXJlY3RvcnkiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSUEsMEJBQTBCQyxtQkFBOUI7O0FBRUFDLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsV0FBU0MsU0FETTtBQUVmQyxTQUFPLFlBRlE7QUFHZkMsV0FBUyxpQkFITTtBQUlmQyxVQUFRO0FBQ05DLFVBQU1KLFlBQVksTUFEWjtBQUVOSyxjQUFVO0FBRkosR0FKTztBQVFmQyxXQUFTLENBQ1AsSUFBSVgsdUJBQUosQ0FBNEI7QUFDMUJZLG9CQUFnQjtBQURVLEdBQTVCLENBRE87QUFSTSxDQUFqQiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWRldnRvb2wtZXZhbC1zb3VyY2UtbWFwL3dlYnBhY2suY29uZmlnLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIEhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luID0gcmVxdWlyZSgnLi4vLi4vLi4nKTtcblxubW9kdWxlLmV4cG9ydHMgPSB7XG4gIGNvbnRleHQ6IF9fZGlybmFtZSxcbiAgZW50cnk6ICcuL2luZGV4LmpzJyxcbiAgZGV2dG9vbDogJ2V2YWwtc291cmNlLW1hcCcsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICB9LFxuICBwbHVnaW5zOiBbXG4gICAgbmV3IEhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luKHtcbiAgICAgIGNhY2hlRGlyZWN0b3J5OiAnY2FjaGUnLFxuICAgIH0pLFxuICBdLFxufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

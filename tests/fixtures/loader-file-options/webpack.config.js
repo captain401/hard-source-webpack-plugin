@@ -1,3 +1,5 @@
+'use strict';
+
 var HardSourceWebpackPlugin = require('../../..');
 var webpackVersion = require('webpack/package.json').version;
 
@@ -6,23 +8,20 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + '/tmp',
-    filename: 'main.js',
+    filename: 'main.js'
   },
   module: {
-    rules: [
-      {
-        test: /\.png$/,
-        loader: 'file-loader',
-        options: {
-          name: '[hash].[ext]',
-          outputPath: name => `images/${name}`,
-        },
-      },
-    ],
+    rules: [{
+      test: /\.png$/,
+      loader: 'file-loader',
+      options: {
+        name: '[hash].[ext]',
+        outputPath: name => `images/${name}`
+      }
+    }]
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache'
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1maWxlLW9wdGlvbnMvd2VicGFjay5jb25maWcuanMiXSwibmFtZXMiOlsiSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4iLCJyZXF1aXJlIiwid2VicGFja1ZlcnNpb24iLCJ2ZXJzaW9uIiwibW9kdWxlIiwiZXhwb3J0cyIsImNvbnRleHQiLCJfX2Rpcm5hbWUiLCJlbnRyeSIsIm91dHB1dCIsInBhdGgiLCJmaWxlbmFtZSIsInJ1bGVzIiwidGVzdCIsImxvYWRlciIsIm9wdGlvbnMiLCJuYW1lIiwib3V0cHV0UGF0aCIsInBsdWdpbnMiLCJjYWNoZURpcmVjdG9yeSJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSwwQkFBMEJDLG1CQUE5QjtBQUNBLElBQUlDLGlCQUFpQkQsUUFBUSxzQkFBUixFQUFnQ0UsT0FBckQ7O0FBRUFDLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsV0FBU0MsU0FETTtBQUVmQyxTQUFPLFlBRlE7QUFHZkMsVUFBUTtBQUNOQyxVQUFNSCxZQUFZLE1BRFo7QUFFTkksY0FBVTtBQUZKLEdBSE87QUFPZlAsVUFBUTtBQUNOUSxXQUFPLENBQ0w7QUFDRUMsWUFBTSxRQURSO0FBRUVDLGNBQVEsYUFGVjtBQUdFQyxlQUFTO0FBQ1BDLGNBQU0sY0FEQztBQUVQQyxvQkFBWUQsUUFBUyxVQUFTQSxJQUFLO0FBRjVCO0FBSFgsS0FESztBQURELEdBUE87QUFtQmZFLFdBQVMsQ0FDUCxJQUFJbEIsdUJBQUosQ0FBNEI7QUFDMUJtQixvQkFBZ0I7QUFEVSxHQUE1QixDQURPO0FBbkJNLENBQWpCIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1maWxlLW9wdGlvbnMvd2VicGFjay5jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4gPSByZXF1aXJlKCcuLi8uLi8uLicpO1xudmFyIHdlYnBhY2tWZXJzaW9uID0gcmVxdWlyZSgnd2VicGFjay9wYWNrYWdlLmpzb24nKS52ZXJzaW9uO1xuXG5tb2R1bGUuZXhwb3J0cyA9IHtcbiAgY29udGV4dDogX19kaXJuYW1lLFxuICBlbnRyeTogJy4vaW5kZXguanMnLFxuICBvdXRwdXQ6IHtcbiAgICBwYXRoOiBfX2Rpcm5hbWUgKyAnL3RtcCcsXG4gICAgZmlsZW5hbWU6ICdtYWluLmpzJyxcbiAgfSxcbiAgbW9kdWxlOiB7XG4gICAgcnVsZXM6IFtcbiAgICAgIHtcbiAgICAgICAgdGVzdDogL1xcLnBuZyQvLFxuICAgICAgICBsb2FkZXI6ICdmaWxlLWxvYWRlcicsXG4gICAgICAgIG9wdGlvbnM6IHtcbiAgICAgICAgICBuYW1lOiAnW2hhc2hdLltleHRdJyxcbiAgICAgICAgICBvdXRwdXRQYXRoOiBuYW1lID0+IGBpbWFnZXMvJHtuYW1lfWAsXG4gICAgICAgIH0sXG4gICAgICB9LFxuICAgIF0sXG4gIH0sXG4gIHBsdWdpbnM6IFtcbiAgICBuZXcgSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4oe1xuICAgICAgY2FjaGVEaXJlY3Rvcnk6ICdjYWNoZScsXG4gICAgfSksXG4gIF0sXG59O1xuIl0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

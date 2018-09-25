@@ -1,3 +1,10 @@
-export function fib(n) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fib = fib;
+function fib(n) {
   return n + (n > 0 ? n - 1 : 0);
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LW1vZHVsZS1leHBvcnQtc3Rhci1hbHQvZmliLmpzIl0sIm5hbWVzIjpbImZpYiIsIm4iXSwibWFwcGluZ3MiOiI7Ozs7O1FBQWdCQSxHLEdBQUFBLEc7QUFBVCxTQUFTQSxHQUFULENBQWFDLENBQWIsRUFBZ0I7QUFDckIsU0FBT0EsS0FBS0EsSUFBSSxDQUFKLEdBQVFBLElBQUksQ0FBWixHQUFnQixDQUFyQixDQUFQO0FBQ0QiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1lczIwMTUtbW9kdWxlLWV4cG9ydC1zdGFyLWFsdC9maWIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgZnVuY3Rpb24gZmliKG4pIHtcbiAgcmV0dXJuIG4gKyAobiA+IDAgPyBuIC0gMSA6IDApO1xufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

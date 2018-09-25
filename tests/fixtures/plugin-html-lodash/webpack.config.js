@@ -1,3 +1,5 @@
+'use strict';
+
 var HtmlPlugin = require('html-webpack-plugin');
 
 var HardSourceWebpackPlugin = require('../../..');
@@ -7,19 +9,17 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + '/tmp',
-    filename: 'main.js',
+    filename: 'main.js'
   },
-  plugins: [
-    new HtmlPlugin({
-      template: 'index.html',
-      filename: 'index.html',
-      cache: false,
-    }),
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-      environmentHash: {
-        root: __dirname + '/../../..',
-      },
-    }),
-  ],
+  plugins: [new HtmlPlugin({
+    template: 'index.html',
+    filename: 'index.html',
+    cache: false
+  }), new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache',
+    environmentHash: {
+      root: __dirname + '/../../..'
+    }
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1odG1sLWxvZGFzaC93ZWJwYWNrLmNvbmZpZy5qcyJdLCJuYW1lcyI6WyJIdG1sUGx1Z2luIiwicmVxdWlyZSIsIkhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luIiwibW9kdWxlIiwiZXhwb3J0cyIsImNvbnRleHQiLCJfX2Rpcm5hbWUiLCJlbnRyeSIsIm91dHB1dCIsInBhdGgiLCJmaWxlbmFtZSIsInBsdWdpbnMiLCJ0ZW1wbGF0ZSIsImNhY2hlIiwiY2FjaGVEaXJlY3RvcnkiLCJlbnZpcm9ubWVudEhhc2giLCJyb290Il0sIm1hcHBpbmdzIjoiOztBQUFBLElBQUlBLGFBQWFDLFFBQVEscUJBQVIsQ0FBakI7O0FBRUEsSUFBSUMsMEJBQTBCRCxtQkFBOUI7O0FBRUFFLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsV0FBU0MsU0FETTtBQUVmQyxTQUFPLFlBRlE7QUFHZkMsVUFBUTtBQUNOQyxVQUFNSCxZQUFZLE1BRFo7QUFFTkksY0FBVTtBQUZKLEdBSE87QUFPZkMsV0FBUyxDQUNQLElBQUlYLFVBQUosQ0FBZTtBQUNiWSxjQUFVLFlBREc7QUFFYkYsY0FBVSxZQUZHO0FBR2JHLFdBQU87QUFITSxHQUFmLENBRE8sRUFNUCxJQUFJWCx1QkFBSixDQUE0QjtBQUMxQlksb0JBQWdCLE9BRFU7QUFFMUJDLHFCQUFpQjtBQUNmQyxZQUFNVixZQUFZO0FBREg7QUFGUyxHQUE1QixDQU5PO0FBUE0sQ0FBakIiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLWh0bWwtbG9kYXNoL3dlYnBhY2suY29uZmlnLmpzIiwic291cmNlc0NvbnRlbnQiOlsidmFyIEh0bWxQbHVnaW4gPSByZXF1aXJlKCdodG1sLXdlYnBhY2stcGx1Z2luJyk7XG5cbnZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiAnLi9pbmRleC5qcycsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICB9LFxuICBwbHVnaW5zOiBbXG4gICAgbmV3IEh0bWxQbHVnaW4oe1xuICAgICAgdGVtcGxhdGU6ICdpbmRleC5odG1sJyxcbiAgICAgIGZpbGVuYW1lOiAnaW5kZXguaHRtbCcsXG4gICAgICBjYWNoZTogZmFsc2UsXG4gICAgfSksXG4gICAgbmV3IEhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luKHtcbiAgICAgIGNhY2hlRGlyZWN0b3J5OiAnY2FjaGUnLFxuICAgICAgZW52aXJvbm1lbnRIYXNoOiB7XG4gICAgICAgIHJvb3Q6IF9fZGlybmFtZSArICcvLi4vLi4vLi4nLFxuICAgICAgfSxcbiAgICB9KSxcbiAgXSxcbn07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

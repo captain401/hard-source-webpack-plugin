@@ -1,3 +1,6 @@
-import {key} from './obj';
+'use strict';
 
-console.log(key);
+var _obj = require('./obj');
+
+console.log(_obj.key);
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1wcmVmZXRjaC1lczIwMTUvaW5kZXguanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyIsImtleSJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFFQUEsUUFBUUMsR0FBUixDQUFZQyxRQUFaIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1wcmVmZXRjaC1lczIwMTUvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2tleX0gZnJvbSAnLi9vYmonO1xuXG5jb25zb2xlLmxvZyhrZXkpO1xuIl0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

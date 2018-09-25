@@ -1,3 +1,6 @@
-import {fib, fab} from './export';
+'use strict';
 
-console.log(fib(3), fab(4));
+var _export = require('./export');
+
+console.log((0, _export.fib)(3), (0, _export.fab)(4));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LW1vZHVsZS1leHBvcnQtc3Rhci9pbmRleC5qcyJdLCJuYW1lcyI6WyJjb25zb2xlIiwibG9nIl0sIm1hcHBpbmdzIjoiOztBQUFBOztBQUVBQSxRQUFRQyxHQUFSLENBQVksaUJBQUksQ0FBSixDQUFaLEVBQW9CLGlCQUFJLENBQUosQ0FBcEIiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1lczIwMTUtbW9kdWxlLWV4cG9ydC1zdGFyL2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtmaWIsIGZhYn0gZnJvbSAnLi9leHBvcnQnO1xuXG5jb25zb2xlLmxvZyhmaWIoMyksIGZhYig0KSk7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

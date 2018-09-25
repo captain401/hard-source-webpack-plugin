@@ -1,3 +1,5 @@
+'use strict';
+
 var HardSourceWebpackPlugin = require('../../..');
 
 module.exports = {
@@ -6,14 +8,12 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + '/tmp',
-    filename: 'main.js',
+    filename: 'main.js'
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-    }),
-    new (require('../../../lib/ParallelModulePlugin'))({
-      minModules: 2,
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache'
+  }), new (require('../../../lib/ParallelModulePlugin'))({
+    minModules: 2
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2hhcmQtc291cmNlLXBhcmFsbGVsLXBsdWdpbi1jb250ZXh0L3dlYnBhY2suY29uZmlnLmpzIl0sIm5hbWVzIjpbIkhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luIiwicmVxdWlyZSIsIm1vZHVsZSIsImV4cG9ydHMiLCJtb2RlIiwiY29udGV4dCIsIl9fZGlybmFtZSIsImVudHJ5Iiwib3V0cHV0IiwicGF0aCIsImZpbGVuYW1lIiwicGx1Z2lucyIsImNhY2hlRGlyZWN0b3J5IiwibWluTW9kdWxlcyJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSwwQkFBMEJDLG1CQUE5Qjs7QUFFQUMsT0FBT0MsT0FBUCxHQUFpQjtBQUNmQyxRQUFNLGFBRFM7QUFFZkMsV0FBU0MsU0FGTTtBQUdmQyxTQUFPLFlBSFE7QUFJZkMsVUFBUTtBQUNOQyxVQUFNSCxZQUFZLE1BRFo7QUFFTkksY0FBVTtBQUZKLEdBSk87QUFRZkMsV0FBUyxDQUNQLElBQUlYLHVCQUFKLENBQTRCO0FBQzFCWSxvQkFBZ0I7QUFEVSxHQUE1QixDQURPLEVBSVAsS0FBS1gsNENBQUwsRUFBbUQ7QUFDakRZLGdCQUFZO0FBRHFDLEdBQW5ELENBSk87QUFSTSxDQUFqQiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9oYXJkLXNvdXJjZS1wYXJhbGxlbC1wbHVnaW4tY29udGV4dC93ZWJwYWNrLmNvbmZpZy5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBtb2RlOiAnZGV2ZWxvcG1lbnQnLFxuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiAnLi9pbmRleC5qcycsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICB9LFxuICBwbHVnaW5zOiBbXG4gICAgbmV3IEhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luKHtcbiAgICAgIGNhY2hlRGlyZWN0b3J5OiAnY2FjaGUnLFxuICAgIH0pLFxuICAgIG5ldyAocmVxdWlyZSgnLi4vLi4vLi4vbGliL1BhcmFsbGVsTW9kdWxlUGx1Z2luJykpKHtcbiAgICAgIG1pbk1vZHVsZXM6IDIsXG4gICAgfSksXG4gIF0sXG59O1xuIl0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

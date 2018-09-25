@@ -1,2 +1,10 @@
-import {fib, key} from './obj';
-export default [key, fib];
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _obj = require('./obj');
+
+exports.default = [_obj.key, _obj.fib];
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY2hhbmdlLWVzMjAxNS1leHBvcnQtb3JkZXItbW9kdWxlL290aGVyLmpzIl0sIm5hbWVzIjpbImtleSIsImZpYiJdLCJtYXBwaW5ncyI6Ijs7Ozs7O0FBQUE7O2tCQUNlLENBQUNBLFFBQUQsRUFBTUMsUUFBTixDIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY2hhbmdlLWVzMjAxNS1leHBvcnQtb3JkZXItbW9kdWxlL290aGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtmaWIsIGtleX0gZnJvbSAnLi9vYmonO1xuZXhwb3J0IGRlZmF1bHQgW2tleSwgZmliXTsiXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

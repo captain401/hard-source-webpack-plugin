@@ -1,3 +1,10 @@
-export function fab(n) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fab = fab;
+function fab(n) {
   return n + (n > 0 ? n - 2 : 0);
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LW1vZHVsZS1leHBvcnQtc3Rhci9mYWIuanMiXSwibmFtZXMiOlsiZmFiIiwibiJdLCJtYXBwaW5ncyI6Ijs7Ozs7UUFBZ0JBLEcsR0FBQUEsRztBQUFULFNBQVNBLEdBQVQsQ0FBYUMsQ0FBYixFQUFnQjtBQUNyQixTQUFPQSxLQUFLQSxJQUFJLENBQUosR0FBUUEsSUFBSSxDQUFaLEdBQWdCLENBQXJCLENBQVA7QUFDRCIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWVzMjAxNS1tb2R1bGUtZXhwb3J0LXN0YXIvZmFiLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIGZhYihuKSB7XG4gIHJldHVybiBuICsgKG4gPiAwID8gbiAtIDIgOiAwKTtcbn07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

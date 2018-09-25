@@ -1,6 +1,4 @@
-module.exports =
-  require('./1') +
-  require('./2') +
-  require('./3') +
-  require('./4') +
-  require('./5');
+'use strict';
+
+module.exports = require('./1') + require('./2') + require('./3') + require('./4') + require('./5');
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtbW92ZS0xMGRlcHMtMW5lc3QvYS9pbmRleC5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUNFQyxpQkFDQUEsY0FEQSxHQUVBQSxjQUZBLEdBR0FBLGNBSEEsR0FJQUEsY0FMRiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLW1vdmUtMTBkZXBzLTFuZXN0L2EvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9XG4gIHJlcXVpcmUoJy4vMScpICtcbiAgcmVxdWlyZSgnLi8yJykgK1xuICByZXF1aXJlKCcuLzMnKSArXG4gIHJlcXVpcmUoJy4vNCcpICtcbiAgcmVxdWlyZSgnLi81Jyk7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

@@ -1,3 +1,6 @@
-import {fab} from './obj';
+'use strict';
 
-console.log(fab(3));
+var _obj = require('./obj');
+
+console.log((0, _obj.fab)(3));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1zaWRlLWVmZmVjdC1jaGFuZ2UvaW5kZXguanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFFQUEsUUFBUUMsR0FBUixDQUFZLGNBQUksQ0FBSixDQUFaIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1zaWRlLWVmZmVjdC1jaGFuZ2UvaW5kZXguanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQge2ZhYn0gZnJvbSAnLi9vYmonO1xuXG5jb25zb2xlLmxvZyhmYWIoMykpOyJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

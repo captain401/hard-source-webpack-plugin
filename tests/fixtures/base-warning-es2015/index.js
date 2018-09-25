@@ -1,2 +1,6 @@
-import {warning} from './obj';
-console.log(warning);
+'use strict';
+
+var _obj = require('./obj');
+
+console.log(_obj.warning);
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2Utd2FybmluZy1lczIwMTUvaW5kZXguanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyIsIndhcm5pbmciXSwibWFwcGluZ3MiOiI7O0FBQUE7O0FBQ0FBLFFBQVFDLEdBQVIsQ0FBWUMsWUFBWiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLXdhcm5pbmctZXMyMDE1L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHt3YXJuaW5nfSBmcm9tICcuL29iaic7XG5jb25zb2xlLmxvZyh3YXJuaW5nKTsiXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

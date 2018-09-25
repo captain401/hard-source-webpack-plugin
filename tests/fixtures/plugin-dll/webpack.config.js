@@ -1,27 +1,27 @@
+'use strict';
+
 var DllPlugin = require('webpack').DllPlugin;
 var HardSourceWebpackPlugin = require('../../..');
 
 module.exports = {
   context: __dirname,
   entry: {
-    'dll': ['./fib.js'],
+    'dll': ['./fib.js']
   },
   output: {
     path: __dirname + '/tmp',
     filename: 'dll.js',
-    library: '[name]_[hash]',
+    library: '[name]_[hash]'
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-      environmentHash: {
-        root: __dirname + '/../../..',
-      },
-    }),
-    new DllPlugin({
-      path: __dirname + '/tmp/dll-manifest.json',
-      name: '[name]_[hash]',
-      context: __dirname,
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache',
+    environmentHash: {
+      root: __dirname + '/../../..'
+    }
+  }), new DllPlugin({
+    path: __dirname + '/tmp/dll-manifest.json',
+    name: '[name]_[hash]',
+    context: __dirname
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1kbGwvd2VicGFjay5jb25maWcuanMiXSwibmFtZXMiOlsiRGxsUGx1Z2luIiwicmVxdWlyZSIsIkhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luIiwibW9kdWxlIiwiZXhwb3J0cyIsImNvbnRleHQiLCJfX2Rpcm5hbWUiLCJlbnRyeSIsIm91dHB1dCIsInBhdGgiLCJmaWxlbmFtZSIsImxpYnJhcnkiLCJwbHVnaW5zIiwiY2FjaGVEaXJlY3RvcnkiLCJlbnZpcm9ubWVudEhhc2giLCJyb290IiwibmFtZSJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSxZQUFZQyxRQUFRLFNBQVIsRUFBbUJELFNBQW5DO0FBQ0EsSUFBSUUsMEJBQTBCRCxtQkFBOUI7O0FBRUFFLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsV0FBU0MsU0FETTtBQUVmQyxTQUFPO0FBQ0wsV0FBTyxDQUFDLFVBQUQ7QUFERixHQUZRO0FBS2ZDLFVBQVE7QUFDTkMsVUFBTUgsWUFBWSxNQURaO0FBRU5JLGNBQVUsUUFGSjtBQUdOQyxhQUFTO0FBSEgsR0FMTztBQVVmQyxXQUFTLENBQ1AsSUFBSVYsdUJBQUosQ0FBNEI7QUFDMUJXLG9CQUFnQixPQURVO0FBRTFCQyxxQkFBaUI7QUFDZkMsWUFBTVQsWUFBWTtBQURIO0FBRlMsR0FBNUIsQ0FETyxFQU9QLElBQUlOLFNBQUosQ0FBYztBQUNaUyxVQUFNSCxZQUFZLHdCQUROO0FBRVpVLFVBQU0sZUFGTTtBQUdaWCxhQUFTQztBQUhHLEdBQWQsQ0FQTztBQVZNLENBQWpCIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1kbGwvd2VicGFjay5jb25maWcuanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgRGxsUGx1Z2luID0gcmVxdWlyZSgnd2VicGFjaycpLkRsbFBsdWdpbjtcbnZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiB7XG4gICAgJ2RsbCc6IFsnLi9maWIuanMnXSxcbiAgfSxcbiAgb3V0cHV0OiB7XG4gICAgcGF0aDogX19kaXJuYW1lICsgJy90bXAnLFxuICAgIGZpbGVuYW1lOiAnZGxsLmpzJyxcbiAgICBsaWJyYXJ5OiAnW25hbWVdX1toYXNoXScsXG4gIH0sXG4gIHBsdWdpbnM6IFtcbiAgICBuZXcgSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4oe1xuICAgICAgY2FjaGVEaXJlY3Rvcnk6ICdjYWNoZScsXG4gICAgICBlbnZpcm9ubWVudEhhc2g6IHtcbiAgICAgICAgcm9vdDogX19kaXJuYW1lICsgJy8uLi8uLi8uLicsXG4gICAgICB9LFxuICAgIH0pLFxuICAgIG5ldyBEbGxQbHVnaW4oe1xuICAgICAgcGF0aDogX19kaXJuYW1lICsgJy90bXAvZGxsLW1hbmlmZXN0Lmpzb24nLFxuICAgICAgbmFtZTogJ1tuYW1lXV9baGFzaF0nLFxuICAgICAgY29udGV4dDogX19kaXJuYW1lLFxuICAgIH0pLFxuICBdLFxufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

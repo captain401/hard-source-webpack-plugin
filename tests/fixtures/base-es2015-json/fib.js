@@ -1,3 +1,12 @@
-export default function(n) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+exports.default = function (n) {
   return n + (n > 0 ? n - 1 : 0);
 };
+
+;
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LWpzb24vZmliLmpzIl0sIm5hbWVzIjpbIm4iXSwibWFwcGluZ3MiOiI7Ozs7OztrQkFBZSxVQUFTQSxDQUFULEVBQVk7QUFDekIsU0FBT0EsS0FBS0EsSUFBSSxDQUFKLEdBQVFBLElBQUksQ0FBWixHQUFnQixDQUFyQixDQUFQO0FBQ0QsQzs7QUFBQSIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWVzMjAxNS1qc29uL2ZpYi5qcyIsInNvdXJjZXNDb250ZW50IjpbImV4cG9ydCBkZWZhdWx0IGZ1bmN0aW9uKG4pIHtcbiAgcmV0dXJuIG4gKyAobiA+IDAgPyBuIC0gMSA6IDApO1xufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

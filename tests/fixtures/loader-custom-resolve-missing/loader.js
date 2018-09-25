@@ -1,7 +1,7 @@
-module.exports = function(source) {
+'use strict';
+
+module.exports = function (source) {
   this.cacheable && this.cacheable();
-  return [
-    '// loader.js',
-    source,
-  ].join('\n');
+  return ['// loader.js', source].join('\n');
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1taXNzaW5nL2xvYWRlci5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwic291cmNlIiwiY2FjaGVhYmxlIiwiam9pbiJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFpQixVQUFTQyxNQUFULEVBQWlCO0FBQ2hDLE9BQUtDLFNBQUwsSUFBa0IsS0FBS0EsU0FBTCxFQUFsQjtBQUNBLFNBQU8sQ0FDTCxjQURLLEVBRUxELE1BRkssRUFHTEUsSUFISyxDQUdBLElBSEEsQ0FBUDtBQUlELENBTkQiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvbG9hZGVyLWN1c3RvbS1yZXNvbHZlLW1pc3NpbmcvbG9hZGVyLmpzIiwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSBmdW5jdGlvbihzb3VyY2UpIHtcbiAgdGhpcy5jYWNoZWFibGUgJiYgdGhpcy5jYWNoZWFibGUoKTtcbiAgcmV0dXJuIFtcbiAgICAnLy8gbG9hZGVyLmpzJyxcbiAgICBzb3VyY2UsXG4gIF0uam9pbignXFxuJyk7XG59OyJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

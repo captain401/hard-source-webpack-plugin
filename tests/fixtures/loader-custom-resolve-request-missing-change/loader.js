@@ -1,9 +1,8 @@
-module.exports = function(source) {
+'use strict';
+
+module.exports = function (source) {
   this.cacheable && this.cacheable();
   const done = this.async();
-  new Promise(
-    (f, e) => this.resolve(this.context, './fab', (er, v) => (er ? e(er) : f(v)))
-  )
-  .then(v => JSON.stringify(v))
-  .then(v => done(null, v), done);
+  new Promise((f, e) => this.resolve(this.context, './fab', (er, v) => er ? e(er) : f(v))).then(v => JSON.stringify(v)).then(v => done(null, v), done);
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1yZXF1ZXN0LW1pc3NpbmctY2hhbmdlL2xvYWRlci5qcyJdLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwic291cmNlIiwiY2FjaGVhYmxlIiwiZG9uZSIsImFzeW5jIiwiUHJvbWlzZSIsImYiLCJlIiwicmVzb2x2ZSIsImNvbnRleHQiLCJlciIsInYiLCJ0aGVuIiwiSlNPTiIsInN0cmluZ2lmeSJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsT0FBT0MsT0FBUCxHQUFpQixVQUFTQyxNQUFULEVBQWlCO0FBQ2hDLE9BQUtDLFNBQUwsSUFBa0IsS0FBS0EsU0FBTCxFQUFsQjtBQUNBLFFBQU1DLE9BQU8sS0FBS0MsS0FBTCxFQUFiO0FBQ0EsTUFBSUMsT0FBSixDQUNFLENBQUNDLENBQUQsRUFBSUMsQ0FBSixLQUFVLEtBQUtDLE9BQUwsQ0FBYSxLQUFLQyxPQUFsQixFQUEyQixPQUEzQixFQUFvQyxDQUFDQyxFQUFELEVBQUtDLENBQUwsS0FBWUQsS0FBS0gsRUFBRUcsRUFBRixDQUFMLEdBQWFKLEVBQUVLLENBQUYsQ0FBN0QsQ0FEWixFQUdDQyxJQUhELENBR01ELEtBQUtFLEtBQUtDLFNBQUwsQ0FBZUgsQ0FBZixDQUhYLEVBSUNDLElBSkQsQ0FJTUQsS0FBS1IsS0FBSyxJQUFMLEVBQVdRLENBQVgsQ0FKWCxFQUkwQlIsSUFKMUI7QUFLRCxDQVJEIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1yZXF1ZXN0LW1pc3NpbmctY2hhbmdlL2xvYWRlci5qcyIsInNvdXJjZXNDb250ZW50IjpbIm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24oc291cmNlKSB7XG4gIHRoaXMuY2FjaGVhYmxlICYmIHRoaXMuY2FjaGVhYmxlKCk7XG4gIGNvbnN0IGRvbmUgPSB0aGlzLmFzeW5jKCk7XG4gIG5ldyBQcm9taXNlKFxuICAgIChmLCBlKSA9PiB0aGlzLnJlc29sdmUodGhpcy5jb250ZXh0LCAnLi9mYWInLCAoZXIsIHYpID0+IChlciA/IGUoZXIpIDogZih2KSkpXG4gIClcbiAgLnRoZW4odiA9PiBKU09OLnN0cmluZ2lmeSh2KSlcbiAgLnRoZW4odiA9PiBkb25lKG51bGwsIHYpLCBkb25lKTtcbn07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

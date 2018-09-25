@@ -1,5 +1,8 @@
-define(function() {
-  return function(n) {
+"use strict";
+
+define(function () {
+  return function (n) {
     return n + (n > 0 ? n - 1 : 0);
   };
 });
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtYW1kLTFkZXAvZmliLmpzIl0sIm5hbWVzIjpbImRlZmluZSIsIm4iXSwibWFwcGluZ3MiOiI7O0FBQUFBLE9BQU8sWUFBVztBQUNoQixTQUFPLFVBQVNDLENBQVQsRUFBWTtBQUNqQixXQUFPQSxLQUFLQSxJQUFJLENBQUosR0FBUUEsSUFBSSxDQUFaLEdBQWdCLENBQXJCLENBQVA7QUFDRCxHQUZEO0FBR0QsQ0FKRCIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWFtZC0xZGVwL2ZpYi5qcyIsInNvdXJjZXNDb250ZW50IjpbImRlZmluZShmdW5jdGlvbigpIHtcbiAgcmV0dXJuIGZ1bmN0aW9uKG4pIHtcbiAgICByZXR1cm4gbiArIChuID4gMCA/IG4gLSAxIDogMCk7XG4gIH07XG59KTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

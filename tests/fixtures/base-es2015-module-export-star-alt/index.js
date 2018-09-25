@@ -1,3 +1,6 @@
-import {fab} from './export';
+'use strict';
 
-console.log(fab(4));
+var _export = require('./export');
+
+console.log((0, _export.fab)(4));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LW1vZHVsZS1leHBvcnQtc3Rhci1hbHQvaW5kZXguanMiXSwibmFtZXMiOlsiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQTs7QUFFQUEsUUFBUUMsR0FBUixDQUFZLGlCQUFJLENBQUosQ0FBWiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWVzMjAxNS1tb2R1bGUtZXhwb3J0LXN0YXItYWx0L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHtmYWJ9IGZyb20gJy4vZXhwb3J0JztcblxuY29uc29sZS5sb2coZmFiKDQpKTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

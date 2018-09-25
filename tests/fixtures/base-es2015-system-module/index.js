@@ -1,4 +1,6 @@
-System.import('./obj')
-.then(({fib}) => {
+'use strict';
+
+System.import('./obj').then(({ fib }) => {
   console.log(fib(3));
 });
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZXMyMDE1LXN5c3RlbS1tb2R1bGUvaW5kZXguanMiXSwibmFtZXMiOlsiU3lzdGVtIiwiaW1wb3J0IiwidGhlbiIsImZpYiIsImNvbnNvbGUiLCJsb2ciXSwibWFwcGluZ3MiOiI7O0FBQUFBLE9BQU9DLE1BQVAsVUFDQ0MsSUFERCxDQUNNLENBQUMsRUFBQ0MsR0FBRCxFQUFELEtBQVc7QUFDZkMsVUFBUUMsR0FBUixDQUFZRixJQUFJLENBQUosQ0FBWjtBQUNELENBSEQiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1lczIwMTUtc3lzdGVtLW1vZHVsZS9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbIlN5c3RlbS5pbXBvcnQoJy4vb2JqJylcbi50aGVuKCh7ZmlifSkgPT4ge1xuICBjb25zb2xlLmxvZyhmaWIoMykpO1xufSk7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

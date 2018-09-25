@@ -1,5 +1,15 @@
-import './other';
-export var key = 'obj';
-export function fib(n) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.key = undefined;
+exports.fib = fib;
+
+require('./other');
+
+var key = exports.key = 'obj';
+function fib(n) {
   return n + (n > 0 ? n - 1 : 0);
 }
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY2hhbmdlLWVzMjAxNS1leHBvcnQtb3JkZXItbW9kdWxlL29iai5qcyJdLCJuYW1lcyI6WyJmaWIiLCJrZXkiLCJuIl0sIm1hcHBpbmdzIjoiOzs7Ozs7UUFFZ0JBLEcsR0FBQUEsRzs7QUFGaEI7O0FBQ08sSUFBSUMsb0JBQU0sS0FBVjtBQUNBLFNBQVNELEdBQVQsQ0FBYUUsQ0FBYixFQUFnQjtBQUNyQixTQUFPQSxLQUFLQSxJQUFJLENBQUosR0FBUUEsSUFBSSxDQUFaLEdBQWdCLENBQXJCLENBQVA7QUFDRCIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLWNoYW5nZS1lczIwMTUtZXhwb3J0LW9yZGVyLW1vZHVsZS9vYmouanMiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy4vb3RoZXInO1xuZXhwb3J0IHZhciBrZXkgPSAnb2JqJztcbmV4cG9ydCBmdW5jdGlvbiBmaWIobikge1xuICByZXR1cm4gbiArIChuID4gMCA/IG4gLSAxIDogMCk7XG59Il0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

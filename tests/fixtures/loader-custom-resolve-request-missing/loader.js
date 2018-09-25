@@ -1,9 +1,8 @@
-module.exports = function(source) {
+'use strict';
+
+module.exports = function (source) {
   this.cacheable && this.cacheable();
   const done = this.async();
-  new Promise(
-    (f, e) => this.resolve(this.context, './fab', (er, v) => (er ? f('unresolved') : f(v)))
-  )
-  .then(v => JSON.stringify(v))
-  .then(v => done(null, v), done);
+  new Promise((f, e) => this.resolve(this.context, './fab', (er, v) => er ? f('unresolved') : f(v))).then(v => JSON.stringify(v)).then(v => done(null, v), done);
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2xvYWRlci1jdXN0b20tcmVzb2x2ZS1yZXF1ZXN0LW1pc3NpbmcvbG9hZGVyLmpzIl0sIm5hbWVzIjpbIm1vZHVsZSIsImV4cG9ydHMiLCJzb3VyY2UiLCJjYWNoZWFibGUiLCJkb25lIiwiYXN5bmMiLCJQcm9taXNlIiwiZiIsImUiLCJyZXNvbHZlIiwiY29udGV4dCIsImVyIiwidiIsInRoZW4iLCJKU09OIiwic3RyaW5naWZ5Il0sIm1hcHBpbmdzIjoiOztBQUFBQSxPQUFPQyxPQUFQLEdBQWlCLFVBQVNDLE1BQVQsRUFBaUI7QUFDaEMsT0FBS0MsU0FBTCxJQUFrQixLQUFLQSxTQUFMLEVBQWxCO0FBQ0EsUUFBTUMsT0FBTyxLQUFLQyxLQUFMLEVBQWI7QUFDQSxNQUFJQyxPQUFKLENBQ0UsQ0FBQ0MsQ0FBRCxFQUFJQyxDQUFKLEtBQVUsS0FBS0MsT0FBTCxDQUFhLEtBQUtDLE9BQWxCLEVBQTJCLE9BQTNCLEVBQW9DLENBQUNDLEVBQUQsRUFBS0MsQ0FBTCxLQUFZRCxLQUFLSixFQUFFLFlBQUYsQ0FBTCxHQUF1QkEsRUFBRUssQ0FBRixDQUF2RSxDQURaLEVBR0NDLElBSEQsQ0FHTUQsS0FBS0UsS0FBS0MsU0FBTCxDQUFlSCxDQUFmLENBSFgsRUFJQ0MsSUFKRCxDQUlNRCxLQUFLUixLQUFLLElBQUwsRUFBV1EsQ0FBWCxDQUpYLEVBSTBCUixJQUoxQjtBQUtELENBUkQiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvbG9hZGVyLWN1c3RvbS1yZXNvbHZlLXJlcXVlc3QtbWlzc2luZy9sb2FkZXIuanMiLCJzb3VyY2VzQ29udGVudCI6WyJtb2R1bGUuZXhwb3J0cyA9IGZ1bmN0aW9uKHNvdXJjZSkge1xuICB0aGlzLmNhY2hlYWJsZSAmJiB0aGlzLmNhY2hlYWJsZSgpO1xuICBjb25zdCBkb25lID0gdGhpcy5hc3luYygpO1xuICBuZXcgUHJvbWlzZShcbiAgICAoZiwgZSkgPT4gdGhpcy5yZXNvbHZlKHRoaXMuY29udGV4dCwgJy4vZmFiJywgKGVyLCB2KSA9PiAoZXIgPyBmKCd1bnJlc29sdmVkJykgOiBmKHYpKSlcbiAgKVxuICAudGhlbih2ID0+IEpTT04uc3RyaW5naWZ5KHYpKVxuICAudGhlbih2ID0+IGRvbmUobnVsbCwgdiksIGRvbmUpO1xufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

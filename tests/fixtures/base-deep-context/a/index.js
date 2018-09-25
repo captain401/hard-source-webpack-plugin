@@ -1,13 +1,6 @@
+'use strict';
+
 var context = require.context('.', true, /\d/);
 
-module.exports =
-  context('./1') +
-  context('./2') +
-  context('./3') +
-  context('./4') +
-  context('./5') +
-  context('./b/6') +
-  context('./b/7') +
-  context('./b/8') +
-  context('./b/9') +
-  context('./b/10');
+module.exports = context('./1') + context('./2') + context('./3') + context('./4') + context('./5') + context('./b/6') + context('./b/7') + context('./b/8') + context('./b/9') + context('./b/10');
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtZGVlcC1jb250ZXh0L2EvaW5kZXguanMiXSwibmFtZXMiOlsiY29udGV4dCIsInJlcXVpcmUiLCJtb2R1bGUiLCJleHBvcnRzIl0sIm1hcHBpbmdzIjoiOztBQUFBLElBQUlBLFVBQVVDLFFBQVFELE9BQVIsQ0FBZ0IsR0FBaEIsRUFBcUIsSUFBckIsRUFBMkIsSUFBM0IsQ0FBZDs7QUFFQUUsT0FBT0MsT0FBUCxHQUNFSCxRQUFRLEtBQVIsSUFDQUEsUUFBUSxLQUFSLENBREEsR0FFQUEsUUFBUSxLQUFSLENBRkEsR0FHQUEsUUFBUSxLQUFSLENBSEEsR0FJQUEsUUFBUSxLQUFSLENBSkEsR0FLQUEsUUFBUSxPQUFSLENBTEEsR0FNQUEsUUFBUSxPQUFSLENBTkEsR0FPQUEsUUFBUSxPQUFSLENBUEEsR0FRQUEsUUFBUSxPQUFSLENBUkEsR0FTQUEsUUFBUSxRQUFSLENBVkYiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1kZWVwLWNvbnRleHQvYS9pbmRleC5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBjb250ZXh0ID0gcmVxdWlyZS5jb250ZXh0KCcuJywgdHJ1ZSwgL1xcZC8pO1xuXG5tb2R1bGUuZXhwb3J0cyA9XG4gIGNvbnRleHQoJy4vMScpICtcbiAgY29udGV4dCgnLi8yJykgK1xuICBjb250ZXh0KCcuLzMnKSArXG4gIGNvbnRleHQoJy4vNCcpICtcbiAgY29udGV4dCgnLi81JykgK1xuICBjb250ZXh0KCcuL2IvNicpICtcbiAgY29udGV4dCgnLi9iLzcnKSArXG4gIGNvbnRleHQoJy4vYi84JykgK1xuICBjb250ZXh0KCcuL2IvOScpICtcbiAgY29udGV4dCgnLi9iLzEwJyk7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

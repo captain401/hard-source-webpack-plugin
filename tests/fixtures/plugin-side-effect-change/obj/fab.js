@@ -1,5 +1,11 @@
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 function fab(n) {
   return n * (n > 1 ? n - 1 : 1);
 }
 
-export {fab};
+exports.fab = fab;
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1zaWRlLWVmZmVjdC1jaGFuZ2Uvb2JqL2ZhYi5qcyJdLCJuYW1lcyI6WyJmYWIiLCJuIl0sIm1hcHBpbmdzIjoiOzs7OztBQUFBLFNBQVNBLEdBQVQsQ0FBYUMsQ0FBYixFQUFnQjtBQUNkLFNBQU9BLEtBQUtBLElBQUksQ0FBSixHQUFRQSxJQUFJLENBQVosR0FBZ0IsQ0FBckIsQ0FBUDtBQUNEOztRQUVPRCxHLEdBQUFBLEciLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLXNpZGUtZWZmZWN0LWNoYW5nZS9vYmovZmFiLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZnVuY3Rpb24gZmFiKG4pIHtcbiAgcmV0dXJuIG4gKiAobiA+IDEgPyBuIC0gMSA6IDEpO1xufVxuXG5leHBvcnQge2ZhYn07XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==

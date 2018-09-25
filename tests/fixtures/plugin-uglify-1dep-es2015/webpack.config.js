@@ -1,20 +1,20 @@
+'use strict';
+
 var HardSourceWebpackPlugin = require('../../..');
 var webpackIf = require('../../util/webpack-if');
 
-var plugins = webpackIf.webpackGte4([], function() {
+var plugins = webpackIf.webpackGte4([], function () {
   var UglifyJsPlugin = require('webpack').optimize.UglifyJsPlugin;
-  return [
-    new UglifyJsPlugin({
-      sourceMap: false,
-      compress: false,
-    }),
-  ];
+  return [new UglifyJsPlugin({
+    sourceMap: false,
+    compress: false
+  })];
 });
 
 var extendedOptions = webpackIf.webpackGte4({
   optimization: {
-    minimize: true,
-  },
+    minimize: true
+  }
 });
 
 module.exports = Object.assign({
@@ -23,14 +23,13 @@ module.exports = Object.assign({
   output: {
     path: __dirname + '/tmp',
     filename: 'main.js',
-    libraryTarget: 'commonjs2',
+    libraryTarget: 'commonjs2'
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-      environmentHash: {
-        root: __dirname + '/../../..',
-      },
-    }),
-  ].concat(plugins),
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache',
+    environmentHash: {
+      root: __dirname + '/../../..'
+    }
+  })].concat(plugins)
 }, extendedOptions);
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi11Z2xpZnktMWRlcC1lczIwMTUvd2VicGFjay5jb25maWcuanMiXSwibmFtZXMiOlsiSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4iLCJyZXF1aXJlIiwid2VicGFja0lmIiwicGx1Z2lucyIsIndlYnBhY2tHdGU0IiwiVWdsaWZ5SnNQbHVnaW4iLCJvcHRpbWl6ZSIsInNvdXJjZU1hcCIsImNvbXByZXNzIiwiZXh0ZW5kZWRPcHRpb25zIiwib3B0aW1pemF0aW9uIiwibWluaW1pemUiLCJtb2R1bGUiLCJleHBvcnRzIiwiT2JqZWN0IiwiYXNzaWduIiwiY29udGV4dCIsIl9fZGlybmFtZSIsImVudHJ5Iiwib3V0cHV0IiwicGF0aCIsImZpbGVuYW1lIiwibGlicmFyeVRhcmdldCIsImNhY2hlRGlyZWN0b3J5IiwiZW52aXJvbm1lbnRIYXNoIiwicm9vdCIsImNvbmNhdCJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSwwQkFBMEJDLG1CQUE5QjtBQUNBLElBQUlDLFlBQVlELGdDQUFoQjs7QUFFQSxJQUFJRSxVQUFVRCxVQUFVRSxXQUFWLENBQXNCLEVBQXRCLEVBQTBCLFlBQVc7QUFDakQsTUFBSUMsaUJBQWlCSixRQUFRLFNBQVIsRUFBbUJLLFFBQW5CLENBQTRCRCxjQUFqRDtBQUNBLFNBQU8sQ0FDTCxJQUFJQSxjQUFKLENBQW1CO0FBQ2pCRSxlQUFXLEtBRE07QUFFakJDLGNBQVU7QUFGTyxHQUFuQixDQURLLENBQVA7QUFNRCxDQVJhLENBQWQ7O0FBVUEsSUFBSUMsa0JBQWtCUCxVQUFVRSxXQUFWLENBQXNCO0FBQzFDTSxnQkFBYztBQUNaQyxjQUFVO0FBREU7QUFENEIsQ0FBdEIsQ0FBdEI7O0FBTUFDLE9BQU9DLE9BQVAsR0FBaUJDLE9BQU9DLE1BQVAsQ0FBYztBQUM3QkMsV0FBU0MsU0FEb0I7QUFFN0JDLFNBQU8sWUFGc0I7QUFHN0JDLFVBQVE7QUFDTkMsVUFBTUgsWUFBWSxNQURaO0FBRU5JLGNBQVUsU0FGSjtBQUdOQyxtQkFBZTtBQUhULEdBSHFCO0FBUTdCbkIsV0FBUyxDQUNQLElBQUlILHVCQUFKLENBQTRCO0FBQzFCdUIsb0JBQWdCLE9BRFU7QUFFMUJDLHFCQUFpQjtBQUNmQyxZQUFNUixZQUFZO0FBREg7QUFGUyxHQUE1QixDQURPLEVBT1BTLE1BUE8sQ0FPQXZCLE9BUEE7QUFSb0IsQ0FBZCxFQWdCZE0sZUFoQmMsQ0FBakIiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLXVnbGlmeS0xZGVwLWVzMjAxNS93ZWJwYWNrLmNvbmZpZy5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG52YXIgd2VicGFja0lmID0gcmVxdWlyZSgnLi4vLi4vdXRpbC93ZWJwYWNrLWlmJyk7XG5cbnZhciBwbHVnaW5zID0gd2VicGFja0lmLndlYnBhY2tHdGU0KFtdLCBmdW5jdGlvbigpIHtcbiAgdmFyIFVnbGlmeUpzUGx1Z2luID0gcmVxdWlyZSgnd2VicGFjaycpLm9wdGltaXplLlVnbGlmeUpzUGx1Z2luO1xuICByZXR1cm4gW1xuICAgIG5ldyBVZ2xpZnlKc1BsdWdpbih7XG4gICAgICBzb3VyY2VNYXA6IGZhbHNlLFxuICAgICAgY29tcHJlc3M6IGZhbHNlLFxuICAgIH0pLFxuICBdO1xufSk7XG5cbnZhciBleHRlbmRlZE9wdGlvbnMgPSB3ZWJwYWNrSWYud2VicGFja0d0ZTQoe1xuICBvcHRpbWl6YXRpb246IHtcbiAgICBtaW5pbWl6ZTogdHJ1ZSxcbiAgfSxcbn0pO1xuXG5tb2R1bGUuZXhwb3J0cyA9IE9iamVjdC5hc3NpZ24oe1xuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiAnLi9pbmRleC5qcycsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICAgIGxpYnJhcnlUYXJnZXQ6ICdjb21tb25qczInLFxuICB9LFxuICBwbHVnaW5zOiBbXG4gICAgbmV3IEhhcmRTb3VyY2VXZWJwYWNrUGx1Z2luKHtcbiAgICAgIGNhY2hlRGlyZWN0b3J5OiAnY2FjaGUnLFxuICAgICAgZW52aXJvbm1lbnRIYXNoOiB7XG4gICAgICAgIHJvb3Q6IF9fZGlybmFtZSArICcvLi4vLi4vLi4nLFxuICAgICAgfSxcbiAgICB9KSxcbiAgXS5jb25jYXQocGx1Z2lucyksXG59LCBleHRlbmRlZE9wdGlvbnMpO1xuIl0sInNvdXJjZVJvb3QiOiIvVXNlcnMvdHlsZXJhcmJ1cy9kZXYvcHJvdmlkZXIvc3JjIn0=

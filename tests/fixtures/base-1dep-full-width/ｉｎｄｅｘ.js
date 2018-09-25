@@ -1,3 +1,6 @@
-var fib = require('./ｆｉｂ');
+'use strict';
+
+var fib = require('./\uFF46\uFF49\uFF42');
 
 console.log(fib(3));
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtMWRlcC1mdWxsLXdpZHRoL++9ie+9ju+9hO+9he+9mC5qcyJdLCJuYW1lcyI6WyJmaWIiLCJyZXF1aXJlIiwiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQSxJQUFJQSxNQUFNQywrQkFBVjs7QUFFQUMsUUFBUUMsR0FBUixDQUFZSCxJQUFJLENBQUosQ0FBWiIsImZpbGUiOiJoYXJkLXNvdXJjZS13ZWJwYWNrLXBsdWdpbi90ZXN0cy9maXh0dXJlcy9iYXNlLTFkZXAtZnVsbC13aWR0aC/vvYnvvY7vvYTvvYXvvZguanMiLCJzb3VyY2VzQ29udGVudCI6WyJ2YXIgZmliID0gcmVxdWlyZSgnLi/vvYbvvYnvvYInKTtcblxuY29uc29sZS5sb2coZmliKDMpKTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

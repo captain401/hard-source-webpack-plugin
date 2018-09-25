@@ -1,5 +1,8 @@
-require([], function() {
+'use strict';
+
+require([], function () {
   var fib = require('./fib');
 
   console.log(fib(3));
 });
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtY29kZS1zcGxpdC9pbmRleC5qcyJdLCJuYW1lcyI6WyJyZXF1aXJlIiwiZmliIiwiY29uc29sZSIsImxvZyJdLCJtYXBwaW5ncyI6Ijs7QUFBQUEsUUFBUSxFQUFSLEVBQVksWUFBVztBQUNyQixNQUFJQyxNQUFNRCxnQkFBVjs7QUFFQUUsVUFBUUMsR0FBUixDQUFZRixJQUFJLENBQUosQ0FBWjtBQUNELENBSkQiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvYmFzZS1jb2RlLXNwbGl0L2luZGV4LmpzIiwic291cmNlc0NvbnRlbnQiOlsicmVxdWlyZShbXSwgZnVuY3Rpb24oKSB7XG4gIHZhciBmaWIgPSByZXF1aXJlKCcuL2ZpYicpO1xuXG4gIGNvbnNvbGUubG9nKGZpYigzKSk7XG59KTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

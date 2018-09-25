@@ -1,3 +1,5 @@
+'use strict';
+
 var HardSourceWebpackPlugin = require('../../..');
 var webpackIf = require('../../util/webpack-if');
 
@@ -6,21 +8,20 @@ module.exports = {
   entry: './index.js',
   output: {
     path: __dirname + '/tmp',
-    filename: 'main.js',
+    filename: 'main.js'
   },
   // Restrict extensions in this test to improve reducability. Since this test
   // tests resolve warnings having more extensions can produce different results
   // because of the order failing extensions are tried.
   resolve: {
     // Versions after webpack 1 do not allow empty string values.
-    extensions: webpackIf.webpack1(['', '.js'], ['.js']),
+    extensions: webpackIf.webpack1(['', '.js'], ['.js'])
   },
-  plugins: [
-    new HardSourceWebpackPlugin({
-      cacheDirectory: 'cache',
-      environmentHash: {
-        root: __dirname + '/../../..',
-      },
-    }),
-  ],
+  plugins: [new HardSourceWebpackPlugin({
+    cacheDirectory: 'cache',
+    environmentHash: {
+      root: __dirname + '/../../..'
+    }
+  })]
 };
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtMWRlcC1vcHRpb25hbC93ZWJwYWNrLmNvbmZpZy5qcyJdLCJuYW1lcyI6WyJIYXJkU291cmNlV2VicGFja1BsdWdpbiIsInJlcXVpcmUiLCJ3ZWJwYWNrSWYiLCJtb2R1bGUiLCJleHBvcnRzIiwiY29udGV4dCIsIl9fZGlybmFtZSIsImVudHJ5Iiwib3V0cHV0IiwicGF0aCIsImZpbGVuYW1lIiwicmVzb2x2ZSIsImV4dGVuc2lvbnMiLCJ3ZWJwYWNrMSIsInBsdWdpbnMiLCJjYWNoZURpcmVjdG9yeSIsImVudmlyb25tZW50SGFzaCIsInJvb3QiXSwibWFwcGluZ3MiOiI7O0FBQUEsSUFBSUEsMEJBQTBCQyxtQkFBOUI7QUFDQSxJQUFJQyxZQUFZRCxnQ0FBaEI7O0FBRUFFLE9BQU9DLE9BQVAsR0FBaUI7QUFDZkMsV0FBU0MsU0FETTtBQUVmQyxTQUFPLFlBRlE7QUFHZkMsVUFBUTtBQUNOQyxVQUFNSCxZQUFZLE1BRFo7QUFFTkksY0FBVTtBQUZKLEdBSE87QUFPZjtBQUNBO0FBQ0E7QUFDQUMsV0FBUztBQUNQO0FBQ0FDLGdCQUFZVixVQUFVVyxRQUFWLENBQW1CLENBQUMsRUFBRCxFQUFLLEtBQUwsQ0FBbkIsRUFBZ0MsQ0FBQyxLQUFELENBQWhDO0FBRkwsR0FWTTtBQWNmQyxXQUFTLENBQ1AsSUFBSWQsdUJBQUosQ0FBNEI7QUFDMUJlLG9CQUFnQixPQURVO0FBRTFCQyxxQkFBaUI7QUFDZkMsWUFBTVgsWUFBWTtBQURIO0FBRlMsR0FBNUIsQ0FETztBQWRNLENBQWpCIiwiZmlsZSI6ImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL2Jhc2UtMWRlcC1vcHRpb25hbC93ZWJwYWNrLmNvbmZpZy5qcyIsInNvdXJjZXNDb250ZW50IjpbInZhciBIYXJkU291cmNlV2VicGFja1BsdWdpbiA9IHJlcXVpcmUoJy4uLy4uLy4uJyk7XG52YXIgd2VicGFja0lmID0gcmVxdWlyZSgnLi4vLi4vdXRpbC93ZWJwYWNrLWlmJyk7XG5cbm1vZHVsZS5leHBvcnRzID0ge1xuICBjb250ZXh0OiBfX2Rpcm5hbWUsXG4gIGVudHJ5OiAnLi9pbmRleC5qcycsXG4gIG91dHB1dDoge1xuICAgIHBhdGg6IF9fZGlybmFtZSArICcvdG1wJyxcbiAgICBmaWxlbmFtZTogJ21haW4uanMnLFxuICB9LFxuICAvLyBSZXN0cmljdCBleHRlbnNpb25zIGluIHRoaXMgdGVzdCB0byBpbXByb3ZlIHJlZHVjYWJpbGl0eS4gU2luY2UgdGhpcyB0ZXN0XG4gIC8vIHRlc3RzIHJlc29sdmUgd2FybmluZ3MgaGF2aW5nIG1vcmUgZXh0ZW5zaW9ucyBjYW4gcHJvZHVjZSBkaWZmZXJlbnQgcmVzdWx0c1xuICAvLyBiZWNhdXNlIG9mIHRoZSBvcmRlciBmYWlsaW5nIGV4dGVuc2lvbnMgYXJlIHRyaWVkLlxuICByZXNvbHZlOiB7XG4gICAgLy8gVmVyc2lvbnMgYWZ0ZXIgd2VicGFjayAxIGRvIG5vdCBhbGxvdyBlbXB0eSBzdHJpbmcgdmFsdWVzLlxuICAgIGV4dGVuc2lvbnM6IHdlYnBhY2tJZi53ZWJwYWNrMShbJycsICcuanMnXSwgWycuanMnXSksXG4gIH0sXG4gIHBsdWdpbnM6IFtcbiAgICBuZXcgSGFyZFNvdXJjZVdlYnBhY2tQbHVnaW4oe1xuICAgICAgY2FjaGVEaXJlY3Rvcnk6ICdjYWNoZScsXG4gICAgICBlbnZpcm9ubWVudEhhc2g6IHtcbiAgICAgICAgcm9vdDogX19kaXJuYW1lICsgJy8uLi8uLi8uLicsXG4gICAgICB9LFxuICAgIH0pLFxuICBdLFxufTtcbiJdLCJzb3VyY2VSb290IjoiL1VzZXJzL3R5bGVyYXJidXMvZGV2L3Byb3ZpZGVyL3NyYyJ9

@@ -1,5 +1,12 @@
-export function fib(n) {
+'use strict';
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.fib = fib;
+function fib(n) {
   return n + (n > 0 ? n - 2 : 0);
 };
 
-export var key = 'fib';
+var key = exports.key = 'fib';
+//# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImhhcmQtc291cmNlLXdlYnBhY2stcGx1Z2luL3Rlc3RzL2ZpeHR1cmVzL3BsdWdpbi1obXItZXMyMDE1L2ZpYi5qcyJdLCJuYW1lcyI6WyJmaWIiLCJuIiwia2V5Il0sIm1hcHBpbmdzIjoiOzs7OztRQUFnQkEsRyxHQUFBQSxHO0FBQVQsU0FBU0EsR0FBVCxDQUFhQyxDQUFiLEVBQWdCO0FBQ3JCLFNBQU9BLEtBQUtBLElBQUksQ0FBSixHQUFRQSxJQUFJLENBQVosR0FBZ0IsQ0FBckIsQ0FBUDtBQUNEOztBQUVNLElBQUlDLG9CQUFNLEtBQVYiLCJmaWxlIjoiaGFyZC1zb3VyY2Utd2VicGFjay1wbHVnaW4vdGVzdHMvZml4dHVyZXMvcGx1Z2luLWhtci1lczIwMTUvZmliLmpzIiwic291cmNlc0NvbnRlbnQiOlsiZXhwb3J0IGZ1bmN0aW9uIGZpYihuKSB7XG4gIHJldHVybiBuICsgKG4gPiAwID8gbiAtIDIgOiAwKTtcbn07XG5cbmV4cG9ydCB2YXIga2V5ID0gJ2ZpYic7XG4iXSwic291cmNlUm9vdCI6Ii9Vc2Vycy90eWxlcmFyYnVzL2Rldi9wcm92aWRlci9zcmMifQ==
